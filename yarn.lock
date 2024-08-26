@@ -615,13 +615,20 @@
   dependencies:
     uuid "^10.0.0"
 
-"@langchain/langgraph@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.1.1.tgz#1a50669ea9ecfecb83154108ede7a15226f59692"
-  integrity sha512-yzgyqhTBUSKtQY0s3w9lojU04hj5t8KnfQNwRjz29fHCB4pOrzCPMe2OcWhGo08tJ+Rjc/IoY8D+O20/BlMxOg==
+"@langchain/langgraph-checkpoint@~0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-0.0.2.tgz#85d36da808ad08a603e8a8bb3389603811e7a374"
+  integrity sha512-4bLncdoFR4+1gDVtA5H4QoSmXsvIGkrsoaDL6LpP58QriNrxjrufbeIF4PP6jcdsPmC0VuE93QeeOOhLUkOXpg==
+  dependencies:
+    uuid "^10.0.0"
+
+"@langchain/langgraph@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.1.2.tgz#97ee06938be7d48a24af551f3766e715be3c2d6c"
+  integrity sha512-QYzqNS+bTghVm/7bzyQAGVITon4PFP2lTP6vABzOrbzP31nnYmkHlm6PwH6YPCBcqPTIs1tQwZqRXG4Cc7TSkQ==
   dependencies:
     "@langchain/core" ">=0.2.20 <0.3.0"
-    "@langchain/langgraph-checkpoint" "~0.0.1"
+    "@langchain/langgraph-checkpoint" "~0.0.2"
     "@langchain/langgraph-checkpoint-sqlite" "~0.0.1"
     double-ended-queue "^2.1.0-0"
     uuid "^10.0.0"
@@ -2031,7 +2038,7 @@ langchain@^0.2.17, langchain@~0.2.3:
     zod "^3.22.4"
     zod-to-json-schema "^3.22.3"
 
-langsmith@^0.1.43, langsmith@~0.1.30, langsmith@~0.1.40:
+langsmith@^0.1.43, langsmith@^0.1.47, langsmith@~0.1.30, langsmith@~0.1.40:
   version "0.1.47"
   resolved "https://registry.yarnpkg.com/langsmith/-/langsmith-0.1.47.tgz#9c29acac104c63cf638302025d33eca942f7558d"
   integrity sha512-A54kamjY1zn4CRTxxVxhfnn/rjO7VNZS13XuzyXgw7defV8sgclofex+hzMjSb2nhssraSAXGA0KEzEo3+WyWw==
