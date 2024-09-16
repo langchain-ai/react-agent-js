@@ -4,7 +4,7 @@ import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { RunnableConfig } from "@langchain/core/runnables";
 import { StateGraph } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
-import { ensureConfigurable } from "./utils/configuration.js";
+import { ensureConfiguration } from "./utils/configuration.js";
 import { StateT, State } from "./utils/state.js";
 import { TOOLS } from "./utils/tools.js";
 import { BaseMessage } from "@langchain/core/messages";
@@ -15,7 +15,7 @@ async function callModel(
   config: RunnableConfig,
 ): Promise<{ messages: AIMessage[] }> {
   /**Call the LLM powering our "agent".**/
-  const configuration = ensureConfigurable(config);
+  const configuration = ensureConfiguration(config);
   // Feel free to customize the prompt, model, and other logic!
   const prompt = ChatPromptTemplate.fromMessages([
     ["system", configuration.systemPrompt],

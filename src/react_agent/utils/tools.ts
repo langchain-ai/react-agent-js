@@ -1,4 +1,4 @@
-import { ensureConfigurable } from "./configuration.js";
+import { ensureConfiguration } from "./configuration.js";
 import { ensureConfig } from "@langchain/core/runnables";
 import { initChatModel } from "langchain/chat_models/universal";
 import { getMessageText } from "./utils.js";
@@ -21,7 +21,7 @@ const scrapeWebpage = new DynamicStructuredTool({
     const response = await fetch(url);
     const webText = await response.text();
     const config = ensureConfig();
-    const configuration = ensureConfigurable(config);
+    const configuration = ensureConfiguration(config);
     const model = await initChatModel(configuration.modelName);
     const responseMsg = await model.invoke(
       [

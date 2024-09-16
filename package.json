@@ -2,7 +2,7 @@
   "name": "example-graph",
   "version": "0.0.1",
   "description": "A starter template for creating a LangGraph workflow.",
-  "main": "graph.ts",
+  "main": "src/react_agent/graph.ts",
   "author": "Your Name",
   "license": "MIT",
   "private": true,
