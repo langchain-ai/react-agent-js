@@ -608,7 +608,7 @@
     zod "^3.22.3"
     zod-to-json-schema "^3.22.5"
 
-"@langchain/core@>0.2.0 <0.3.0", "@langchain/core@>=0.2.20 <0.3.0", "@langchain/core@>=0.2.21 <0.3.0", "@langchain/core@>=0.2.26 <0.3.0", "@langchain/core@^0.2.28":
+"@langchain/core@>0.2.0 <0.3.0", "@langchain/core@>=0.2.21 <0.3.0", "@langchain/core@>=0.2.26 <0.3.0", "@langchain/core@^0.2.28":
   version "0.2.28"
   resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.2.28.tgz#4b1653bbc2fb529ba9483678dcc37db1951bcb13"
   integrity sha512-xN3+UdfxFaBcm29auMHFHGEYRh+3HwBc/dICHtwfk2wTSmw4HzWmBtZMx3BG+TOgh5Et7+mT6eF6E3omDLfk+A==
@@ -625,35 +625,19 @@
     zod "^3.22.4"
     zod-to-json-schema "^3.22.3"
 
-"@langchain/langgraph-checkpoint-sqlite@~0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@langchain/langgraph-checkpoint-sqlite/-/langgraph-checkpoint-sqlite-0.0.1.tgz#6eb46934f6767a6509d2dc812cf8940dc076b684"
-  integrity sha512-GaZo/rMS9WCO11FdYgO/omCmYnk50zjKdsxPiEKMkorXkPDLuMIgIEfUs5VKc0PMclvFfSNzX8gmvp8Kwk5MpA==
-  dependencies:
-    "@langchain/langgraph-checkpoint" "~0.0.1"
-
-"@langchain/langgraph-checkpoint@~0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-0.0.1.tgz#ef0a61df0e3763864891fe87dfe875bf01b5be12"
-  integrity sha512-RmAw6K7B2293Eu0ikxatzIwxRgD2p6E6PfYlJldTX15TJyFANMreW7A6Qnx4SmxmmFFoH5LtITeqSF4SdXfyvg==
+"@langchain/langgraph-checkpoint@~0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-0.0.6.tgz#69f0c5c9aeefd48dcf0fa1ffa0744d8139a9f27d"
+  integrity sha512-hQsznlUMFKyOCaN9VtqNSSemfKATujNy5ePM6NX7lruk/Mmi2t7R9SsBnf9G2Yts+IaIwv3vJJaAFYEHfqbc5g==
   dependencies:
     uuid "^10.0.0"
 
-"@langchain/langgraph-checkpoint@~0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-0.0.2.tgz#85d36da808ad08a603e8a8bb3389603811e7a374"
-  integrity sha512-4bLncdoFR4+1gDVtA5H4QoSmXsvIGkrsoaDL6LpP58QriNrxjrufbeIF4PP6jcdsPmC0VuE93QeeOOhLUkOXpg==
+"@langchain/langgraph@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.2.3.tgz#34072f68536706a42c7fb978f1ab5373c058e2f5"
+  integrity sha512-agBa79dgKk08B3gNE9+SSLYLmlhBwMaCPsME5BlIFJjs2j2lDnSgKtUfQ9nE4e3Q51L9AA4DjIxmxJiQtS3GOw==
   dependencies:
-    uuid "^10.0.0"
-
-"@langchain/langgraph@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.1.2.tgz#97ee06938be7d48a24af551f3766e715be3c2d6c"
-  integrity sha512-QYzqNS+bTghVm/7bzyQAGVITon4PFP2lTP6vABzOrbzP31nnYmkHlm6PwH6YPCBcqPTIs1tQwZqRXG4Cc7TSkQ==
-  dependencies:
-    "@langchain/core" ">=0.2.20 <0.3.0"
-    "@langchain/langgraph-checkpoint" "~0.0.2"
-    "@langchain/langgraph-checkpoint-sqlite" "~0.0.1"
+    "@langchain/langgraph-checkpoint" "~0.0.6"
     double-ended-queue "^2.1.0-0"
     uuid "^10.0.0"
     zod "^3.23.8"

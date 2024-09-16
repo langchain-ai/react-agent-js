@@ -2,8 +2,13 @@ import { BaseMessage } from "@langchain/core/messages";
 import { Annotation } from "@langchain/langgraph";
 import { messagesStateReducer } from "@langchain/langgraph";
 
+// This defines the schema exposed to the end-uer
+export const InputState = Annotation.Root({
+  messages: Annotation<BaseMessage[]>,
+});
+
 // This is the primary state of your agent, where you can store any information
-export const State = Annotation.Root({
+export const StateAnnotation = Annotation.Root({
   /**
    * Messages track the primary execution state of the agent.
 
@@ -36,17 +41,8 @@ export const State = Annotation.Root({
     reducer: messagesStateReducer,
     default: () => [],
   }),
-  /**
-   * Set to 'true' if the step is recursion_limit - 1 (meaning it's the last step before the graph will raise an error)
-   *
-   * This is a 'managed' variable (meaning it is managed by the state machine rather than your code).
-   */
-  is_last_step: Annotation<boolean>({
-    reducer: (existing: boolean, newValue: boolean) => newValue ?? existing,
-    default: () => false,
-  }),
   // Feel free to add additional attributes to your state as needed.
   // Common examples include retrieved documents, extracted entities, API connections, etc.
 });
 
-export type StateT = typeof State.State;
+export type State = typeof StateAnnotation.State;
