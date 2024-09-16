@@ -25,13 +25,12 @@ export function ensureConfiguration(config: any): Configuration {
   /**
    * Ensure the defaults are populated.
    */
-  const configurable = config.get("configurable") || {};
+  const configurable = config["configurable"] ?? {};
   return {
-    systemPrompt: configurable.get("systemPrompt") || SYSTEM_PROMPT,
-    modelName: configurable.get("modelName", "claude-3-5-sonnet-20240620"),
-    scraperToolModelName: configurable.get(
-      "scraperToolModelName",
-      "accounts/fireworks/models/firefunction-v2"
-    ),
+    systemPrompt: configurable["systemPrompt"] ?? SYSTEM_PROMPT,
+    modelName: configurable["modelName"] ?? "claude-3-5-sonnet-20240620",
+    scraperToolModelName:
+      configurable["scraperToolModelName"] ??
+      "accounts/fireworks/models/firefunction-v2",
   };
 }

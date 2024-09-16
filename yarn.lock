@@ -10,6 +10,19 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
+"@anthropic-ai/sdk@^0.25.2":
+  version "0.25.2"
+  resolved "https://registry.yarnpkg.com/@anthropic-ai/sdk/-/sdk-0.25.2.tgz#ad790b0876e2a72da9a9d6b4cea88a10b2dbc181"
+  integrity sha512-F1Hck/asswwidFLtGdMg3XYgRxEUfygNbpkq5KEaEGsHNaSfxeX18/uZGQCL0oQNcj/tYNx8BaFXVwRhFDi45g==
+  dependencies:
+    "@types/node" "^18.11.18"
+    "@types/node-fetch" "^2.6.4"
+    abort-controller "^3.0.0"
+    agentkeepalive "^4.2.1"
+    form-data-encoder "1.7.2"
+    formdata-node "^4.3.2"
+    node-fetch "^2.6.7"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.24.7":
   version "7.24.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.24.7.tgz#882fd9e09e8ee324e496bd040401c6f046ef4465"
@@ -567,6 +580,17 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@langchain/anthropic@^0.2.15":
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/@langchain/anthropic/-/anthropic-0.2.15.tgz#e1ac28914adff4fd576c14c2444df9a08ea1fac2"
+  integrity sha512-b9zVryoqqzyKelCJoc/8R8EziGfUyaX9w13BNXGoZ+RwMU88XaM05xeqxcJFOezVTi0aH4yoEZ6Kw/CtsukI0A==
+  dependencies:
+    "@anthropic-ai/sdk" "^0.25.2"
+    "@langchain/core" ">=0.2.21 <0.3.0"
+    fast-xml-parser "^4.4.1"
+    zod "^3.22.4"
+    zod-to-json-schema "^3.22.4"
+
 "@langchain/community@^0.2.31":
   version "0.2.31"
   resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.2.31.tgz#4b5ae3ea1e1f694d3c5323f2bf32c1a141b09e57"
@@ -615,13 +639,20 @@
   dependencies:
     uuid "^10.0.0"
 
-"@langchain/langgraph@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.1.1.tgz#1a50669ea9ecfecb83154108ede7a15226f59692"
-  integrity sha512-yzgyqhTBUSKtQY0s3w9lojU04hj5t8KnfQNwRjz29fHCB4pOrzCPMe2OcWhGo08tJ+Rjc/IoY8D+O20/BlMxOg==
+"@langchain/langgraph-checkpoint@~0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-0.0.2.tgz#85d36da808ad08a603e8a8bb3389603811e7a374"
+  integrity sha512-4bLncdoFR4+1gDVtA5H4QoSmXsvIGkrsoaDL6LpP58QriNrxjrufbeIF4PP6jcdsPmC0VuE93QeeOOhLUkOXpg==
+  dependencies:
+    uuid "^10.0.0"
+
+"@langchain/langgraph@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.1.2.tgz#97ee06938be7d48a24af551f3766e715be3c2d6c"
+  integrity sha512-QYzqNS+bTghVm/7bzyQAGVITon4PFP2lTP6vABzOrbzP31nnYmkHlm6PwH6YPCBcqPTIs1tQwZqRXG4Cc7TSkQ==
   dependencies:
     "@langchain/core" ">=0.2.20 <0.3.0"
-    "@langchain/langgraph-checkpoint" "~0.0.1"
+    "@langchain/langgraph-checkpoint" "~0.0.2"
     "@langchain/langgraph-checkpoint-sqlite" "~0.0.1"
     double-ended-queue "^2.1.0-0"
     uuid "^10.0.0"
@@ -1322,6 +1353,13 @@ fast-json-stable-stringify@2.x, fast-json-stable-stringify@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
   integrity sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
+
+fast-xml-parser@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.4.1.tgz#86dbf3f18edf8739326447bcaac31b4ae7f6514f"
+  integrity sha512-xkjOecfnKGkSsOwtZ5Pz7Us/T6mrbPQrq0nh+aCO5V9nk5NLWmasAHumTKjiPJPWANe+kAZ84Jc8ooJkzZ88Sw==
+  dependencies:
+    strnum "^1.0.5"
 
 fb-watchman@^2.0.0:
   version "2.0.2"
@@ -2501,6 +2539,11 @@ strip-json-comments@^3.1.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
+strnum@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/strnum/-/strnum-1.0.5.tgz#5c4e829fe15ad4ff0d20c3db5ac97b73c9b072db"
+  integrity sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==
+
 supports-color@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -2751,7 +2794,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zod-to-json-schema@^3.22.3, zod-to-json-schema@^3.22.5:
+zod-to-json-schema@^3.22.3, zod-to-json-schema@^3.22.4, zod-to-json-schema@^3.22.5:
   version "3.23.2"
   resolved "https://registry.yarnpkg.com/zod-to-json-schema/-/zod-to-json-schema-3.23.2.tgz#bc7e379c8050462538383e382964c03d8fe008f9"
   integrity sha512-uSt90Gzc/tUfyNqxnjlfBs8W6WSGpNBv0rVsNxP/BVSMHMKGdthPYff4xtCHYloJGM0CFxFsb3NbC0eqPhfImw==
