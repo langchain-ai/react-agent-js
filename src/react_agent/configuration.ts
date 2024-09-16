@@ -31,7 +31,7 @@ export function ensureConfiguration(config: any): Configuration {
     modelName: configurable.get("modelName", "claude-3-5-sonnet-20240620"),
     scraperToolModelName: configurable.get(
       "scraperToolModelName",
-      "accounts/fireworks/models/firefunction-v2",
+      "accounts/fireworks/models/firefunction-v2"
     ),
   };
 }

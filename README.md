@@ -1,7 +1,8 @@
 # LangGraph ReAct Agent Template
 
-[![CI](https://github.com/langchain-ai/react-agent-js/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/langchain-ai/react-agent/actions/workflows/unit-tests.yml)
-[![Integration Tests](https://github.com/langchain-ai/react-agent-js/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/langchain-ai/react-agent/actions/workflows/integration-tests.yml)
+<!-- TODO: Add CI badges -->
+<!-- [![CI](https://github.com/langchain-ai/react-agent-js/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/langchain-ai/react-agent/actions/workflows/unit-tests.yml)
+[![Integration Tests](https://github.com/langchain-ai/react-agent-js/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/langchain-ai/react-agent/actions/workflows/integration-tests.yml) -->
 
 This template showcases a [ReAct agent](https://arxiv.org/abs/2210.03629) implemented using [LangGraph.js](https://github.com/langchain-ai/langgraphjs), designed for [LangGraph Studio](https://github.com/langchain-ai/langgraph-studio). ReAct agents are uncomplicated, prototypical agents that can be flexibly extended to many tools.
 

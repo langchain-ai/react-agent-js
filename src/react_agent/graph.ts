@@ -4,9 +4,9 @@ import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { RunnableConfig } from "@langchain/core/runnables";
 import { StateGraph } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
-import { ensureConfiguration } from "./utils/configuration.js";
-import { StateT, State } from "./utils/state.js";
-import { TOOLS } from "./utils/tools.js";
+import { ensureConfiguration } from "./configuration.js";
+import { StateT, State } from "./state.js";
+import { TOOLS } from "./tools.js";
 import { BaseMessage } from "@langchain/core/messages";
 
 // Define the function that calls the model

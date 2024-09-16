@@ -1,9 +1,10 @@
-import { ensureConfiguration } from "./configuration.js";
+import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
 import { ensureConfig } from "@langchain/core/runnables";
-import { initChatModel } from "langchain/chat_models/universal";
-import { getMessageText } from "./utils.js";
 import { DynamicStructuredTool } from "@langchain/core/tools";
+import { initChatModel } from "langchain/chat_models/universal";
 import { z } from "zod";
+import { ensureConfiguration } from "./configuration.js";
+import { getMessageText } from "./utils.js";
 
 const scrapeWebpage = new DynamicStructuredTool({
   name: "scrapeWebpage",
@@ -46,43 +47,9 @@ System time: ${new Date().toISOString()}`,
   },
 });
 
-// Note, in a real use case, you'd want to use a more robust search API.
-const searchDuckduckgo = new DynamicStructuredTool({
-  name: "searchDuckduckgo",
-  description:
-    "Search DuckDuckGo for the given query and return the JSON response. Results are limited, as this is the free public API.",
-  schema: z.object({
-    query: z.string().describe("The search query to send to DuckDuckGo"),
-  }),
-  func: async ({ query }): Promise<any> => {
-    const response = await fetch(
-      `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json`,
-    );
-    const result = await response.json();
-
-    delete result.meta;
-    return result;
-  },
+const searchTavily = new TavilySearchResults({
+  maxResults: 5,
+  apiKey: process.env.TAVILY_API_KEY,
 });
 
-const searchWikipedia = new DynamicStructuredTool({
-  name: "searchWikipedia",
-  description:
-    "Search Wikipedia for the given query and return the JSON response.",
-  schema: z.object({
-    query: z.string().describe("The search query to send to Wikipedia"),
-  }),
-  func: async ({ query }): Promise<any> => {
-    const url = "https://en.wikipedia.org/w/api.php";
-    const params = new URLSearchParams({
-      action: "query",
-      list: "search",
-      srsearch: query,
-      format: "json",
-    });
-    const response = await fetch(`${url}?${params}`);
-    return await response.json();
-  },
-});
-
-export const TOOLS = [scrapeWebpage, searchDuckduckgo, searchWikipedia];
+export const TOOLS = [scrapeWebpage, searchTavily];
