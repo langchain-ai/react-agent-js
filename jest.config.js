@@ -12,4 +12,7 @@ export default {
     ],
   },
   extensionsToTreatAsEsm: [".ts"],
+  setupFiles: ["dotenv/config"],
+  passWithNoTests: true,
+  testTimeout: 20_000,
 };

@@ -9,8 +9,7 @@ import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
  * This tool allows the agent to perform web searches using the Tavily API.
  */
 const searchTavily = new TavilySearchResults({
-  maxResults: 5,
-  apiKey: process.env.TAVILY_API_KEY,
+  maxResults: 3,
 });
 
 /**
