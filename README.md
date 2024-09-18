@@ -1,4 +1,4 @@
-# LangGraph ReAct Agent Template
+# LangGraph.js ReAct Agent Template
 
 <!-- TODO: Add CI badges -->
 <!-- [![CI](https://github.com/langchain-ai/react-agent-js/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/langchain-ai/react-agent/actions/workflows/unit-tests.yml)

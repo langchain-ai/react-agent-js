@@ -1,8 +1,8 @@
 {
-  "name": "example-graph",
+  "name": "react-agent-graph",
   "version": "0.0.1",
   "packageManager": "yarn@1.22.22",
-  "description": "A starter template for creating a LangGraph workflow.",
+  "description": "A template containing a LangGraph.js ReAct agent.",
   "main": "src/react_agent/graph.ts",
   "author": "Your Name",
   "license": "MIT",
