@@ -12,7 +12,8 @@ it("Simple runthrough", async () => {
       },
     ],
   });
+  console.log(res);
   expect(
     res.messages.find((message: BaseMessage) => message._getType() === "tool"),
-  );
+  ).toBeDefined();
 });

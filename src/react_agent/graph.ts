@@ -1,9 +1,10 @@
 import { initChatModel } from "langchain/chat_models/universal";
+
 import { AIMessage } from "@langchain/core/messages";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { RunnableConfig } from "@langchain/core/runnables";
 import { MessagesAnnotation, StateGraph } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
+
 import { ensureConfiguration } from "./configuration.js";
 import { TOOLS } from "./tools.js";
 
@@ -14,18 +15,17 @@ async function callModel(
 ): Promise<typeof MessagesAnnotation.Update> {
   /** Call the LLM powering our agent. **/
   const configuration = ensureConfiguration(config);
+
   // Feel free to customize the prompt, model, and other logic!
-  const prompt = ChatPromptTemplate.fromMessages([
-    ["system", configuration.systemPromptTemplate],
-    ["placeholder", "{messages}"],
-  ]);
   const model = (await initChatModel(configuration.model)).bindTools(TOOLS);
 
-  const messageValue = await prompt.invoke(
-    { ...state, system_time: new Date().toISOString() },
-    config,
-  );
-  const response = await model.invoke(messageValue);
+  const response = await model.invoke([
+    {
+      role: "system",
+      content: configuration.systemPromptTemplate,
+    },
+    ...state.messages,
+  ]);
 
   // We return a list, because this will get added to the existing list
   return { messages: [response] };
