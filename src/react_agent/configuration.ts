@@ -1,28 +1,32 @@
 /**
  * Define the configurable parameters for the agent.
  */
+import { Annotation } from "@langchain/langgraph";
+import { SYSTEM_PROMPT_TEMPLATE } from "./prompts.js";
+import { RunnableConfig } from "@langchain/core/runnables";
 
-import { SYSTEM_PROMPT } from "./prompts.js";
-
-export interface Configuration {
+export const ConfigurationSchema = Annotation.Root({
   /**
    * The system prompt to be used by the agent.
    */
-  systemPrompt: string;
+  systemPromptTemplate: Annotation<string>,
 
   /**
    * The name of the language model to be used by the agent.
    */
-  modelName: string;
-}
+  model: Annotation<string>,
+});
 
-export function ensureConfiguration(config: any): Configuration {
+export function ensureConfiguration(
+  config: RunnableConfig
+): typeof ConfigurationSchema.State {
   /**
    * Ensure the defaults are populated.
    */
-  const configurable = config["configurable"] ?? {};
+  const configurable = config.configurable ?? {};
   return {
-    systemPrompt: configurable["systemPrompt"] ?? SYSTEM_PROMPT,
-    modelName: configurable["modelName"] ?? "claude-3-5-sonnet-20240620",
+    systemPromptTemplate:
+      configurable.systemPromptTemplate ?? SYSTEM_PROMPT_TEMPLATE,
+    model: configurable.model ?? "claude-3-5-sonnet-20240620",
   };
 }
