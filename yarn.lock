@@ -641,10 +641,10 @@
     zod "^3.22.3"
     zod-to-json-schema "^3.22.5"
 
-"@langchain/core@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.3.2.tgz#aff6d83149a40e0e735910f583aca0f1dd7d1bab"
-  integrity sha512-FeoDOStP8l1YdxgykpXnVoEnl4lxGNSOdYzUJN/EdFtkc6cIjDDS5+xewajme0+egaUsO4tGLezKaFpoWxAyQA==
+"@langchain/core@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.3.3.tgz#af12fd767ff2fcedb0a71bd79e6588d7dd52b6b6"
+  integrity sha512-WAtkmhbdl2T41qzimTzhb3pXCHQxO4onqxzPxgdf3KftQdTwLq0YYBDhozRMZLNAd/+cfH0ymZGaZSsnc9Ogsg==
   dependencies:
     ansi-styles "^5.0.0"
     camelcase "6"
