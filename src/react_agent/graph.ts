@@ -1,30 +1,29 @@
-import { initChatModel } from "langchain/chat_models/universal";
-
 import { AIMessage } from "@langchain/core/messages";
 import { RunnableConfig } from "@langchain/core/runnables";
 import { MessagesAnnotation, StateGraph } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
 
-import { ensureConfiguration } from "./configuration.js";
+import { ConfigurationSchema, ensureConfiguration } from "./configuration.js";
 import { TOOLS } from "./tools.js";
+import { loadChatModel } from "./utils.js";
 
 // Define the function that calls the model
 async function callModel(
   state: typeof MessagesAnnotation.State,
-  config: RunnableConfig
+  config: RunnableConfig,
 ): Promise<typeof MessagesAnnotation.Update> {
   /** Call the LLM powering our agent. **/
   const configuration = ensureConfiguration(config);
 
   // Feel free to customize the prompt, model, and other logic!
-  const model = (await initChatModel(configuration.model)).bindTools(TOOLS);
+  const model = (await loadChatModel(configuration.model)).bindTools(TOOLS);
 
   const response = await model.invoke([
     {
       role: "system",
       content: configuration.systemPromptTemplate.replace(
         "{system_time}",
-        new Date().toISOString()
+        new Date().toISOString(),
       ),
     },
     ...state.messages,
@@ -50,7 +49,7 @@ function routeModelOutput(state: typeof MessagesAnnotation.State): string {
 
 // Define a new graph. We use the prebuilt MessagesAnnotation to define state:
 // https://langchain-ai.github.io/langgraphjs/concepts/low_level/#messagesannotation
-const workflow = new StateGraph(MessagesAnnotation)
+const workflow = new StateGraph(MessagesAnnotation, ConfigurationSchema)
   // Define the two nodes we will cycle between
   .addNode("callModel", callModel)
   .addNode("tools", new ToolNode(TOOLS))
@@ -63,7 +62,7 @@ const workflow = new StateGraph(MessagesAnnotation)
     "callModel",
     // Next, we pass in the function that will determine the sink node(s), which
     // will be called after the source node is called.
-    routeModelOutput
+    routeModelOutput,
   )
   // This means that after `tools` is called, `callModel` node is called next.
   .addEdge("tools", "callModel");

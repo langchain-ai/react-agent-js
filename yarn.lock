@@ -665,10 +665,10 @@
   dependencies:
     uuid "^10.0.0"
 
-"@langchain/langgraph@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.2.5.tgz#c42743a59adef03f2e1fea0c198a01694ae34d51"
-  integrity sha512-H4OgZyGRWZHBaiXXIb9avyB8zI6+3OewKn+UOZ+wUzYLKyF3cnq0cNF4/Ps+gxCa5RtOnsHIqQyRkojfXIOqgA==
+"@langchain/langgraph@^0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.2.8.tgz#9606982686ee857064a217dc5599ebdbc9aaf2fe"
+  integrity sha512-sQ3NqwZzdvILeiYQQCDCBFj+FLd3oBfg2sxMo3e5g7vd5+zd/hpK5+JRTHbsMZte0PTAlTbQ5YbfCC2D6K9AVw==
   dependencies:
     "@langchain/langgraph-checkpoint" "~0.0.6"
     double-ended-queue "^2.1.0-0"

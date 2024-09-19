@@ -18,7 +18,7 @@ export const ConfigurationSchema = Annotation.Root({
 });
 
 export function ensureConfiguration(
-  config: RunnableConfig
+  config: RunnableConfig,
 ): typeof ConfigurationSchema.State {
   /**
    * Ensure the defaults are populated.
