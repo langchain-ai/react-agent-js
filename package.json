@@ -20,7 +20,7 @@
     "@langchain/anthropic": "^0.3.12",
     "@langchain/community": "^0.3.27",
     "@langchain/core": "^0.3.37",
-    "@langchain/langgraph": "^0.2.43",
+    "@langchain/langgraph": "^0.2.57",
     "langchain": "^0.3.14"
   },
   "devDependencies": {
