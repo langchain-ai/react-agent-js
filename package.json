@@ -7,6 +7,9 @@
   "main": "src/index.ts",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
