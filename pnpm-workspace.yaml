@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: true
+overrides:
+  langsmith: 0.9.0
+  ws: 8.21.3
