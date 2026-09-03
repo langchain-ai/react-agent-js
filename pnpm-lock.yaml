@@ -14,19 +14,19 @@ importers:
     dependencies:
       '@langchain/anthropic':
         specifier: ^1.5.8
-        version: 1.5.8(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))
+        version: 1.5.8(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))
       '@langchain/core':
         specifier: ^1.2.9
-        version: 1.2.9(openai@7.5.0(zod@4.4.3))
+        version: 1.2.9(openai@7.5.0(zod@4.5.4))
       '@langchain/openai':
         specifier: ^1.5.10
-        version: 1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))
+        version: 1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))
       langchain:
         specifier: ^1.5.10
-        version: 1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))(openai@7.5.0(zod@4.4.3))
+        version: 1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))(openai@7.5.0(zod@4.5.4))
       zod:
-        specifier: ^4.4.3
-        version: 4.4.3
+        specifier: ^4.5.4
+        version: 4.5.4
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.3.6
@@ -932,17 +932,17 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+  zod@4.5.4:
+    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
 
 snapshots:
 
-  '@anthropic-ai/sdk@0.115.0(zod@4.4.3)':
+  '@anthropic-ai/sdk@0.115.0(zod@4.5.4)':
     dependencies:
       json-schema-to-ts: 3.1.1
       standardwebhooks: 1.0.0
     optionalDependencies:
-      zod: 4.4.3
+      zod: 4.5.4
 
   '@babel/runtime@7.29.7': {}
 
@@ -1090,21 +1090,21 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@langchain/anthropic@1.5.8(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))':
+  '@langchain/anthropic@1.5.8(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))':
     dependencies:
-      '@anthropic-ai/sdk': 0.115.0(zod@4.4.3)
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.4.3))
-      zod: 4.4.3
+      '@anthropic-ai/sdk': 0.115.0(zod@4.5.4)
+      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.5.4))
+      zod: 4.5.4
 
-  '@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3))':
+  '@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4))':
     dependencies:
       '@cfworker/json-schema': 4.1.1
       '@standard-schema/spec': 1.1.0
       js-tiktoken: 1.0.21
-      langsmith: 0.9.0(openai@7.5.0(zod@4.4.3))
+      langsmith: 0.9.0(openai@7.5.0(zod@4.5.4))
       mustache: 4.2.0
       p-queue: 6.6.2
-      zod: 4.4.3
+      zod: 4.5.4
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - '@opentelemetry/exporter-trace-otlp-proto'
@@ -1112,38 +1112,38 @@ snapshots:
       - openai
       - ws
 
-  '@langchain/langgraph-checkpoint@1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))':
+  '@langchain/langgraph-checkpoint@1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.4.3))
+      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.5.4))
 
-  '@langchain/langgraph-sdk@1.9.31(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))':
+  '@langchain/langgraph-sdk@1.9.31(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.4.3))
+      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.5.4))
       '@langchain/protocol': 0.0.18
       '@types/json-schema': 7.0.15
       p-queue: 9.3.3
       p-retry: 7.1.1
 
-  '@langchain/langgraph@1.4.12(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))(zod@4.4.3)':
+  '@langchain/langgraph@1.4.12(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))(zod@4.5.4)':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.4.3))
-      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))
-      '@langchain/langgraph-sdk': 1.9.31(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))
+      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.5.4))
+      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))
+      '@langchain/langgraph-sdk': 1.9.31(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))
       '@langchain/protocol': 0.0.18
       '@standard-schema/spec': 1.1.0
-      zod: 4.4.3
+      zod: 4.5.4
     transitivePeerDependencies:
       - react
       - react-dom
       - svelte
       - vue
 
-  '@langchain/openai@1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))':
+  '@langchain/openai@1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.4.3))
+      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.5.4))
       js-tiktoken: 1.0.21
-      openai: 7.5.0(zod@4.4.3)
-      zod: 4.4.3
+      openai: 7.5.0(zod@4.5.4)
+      zod: 4.5.4
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
       - '@smithy/hash-node'
@@ -1580,13 +1580,13 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  langchain@1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))(openai@7.5.0(zod@4.4.3)):
+  langchain@1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))(openai@7.5.0(zod@4.5.4)):
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.4.3))
-      '@langchain/langgraph': 1.4.12(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))(zod@4.4.3)
-      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.4.3)))
-      langsmith: 0.9.0(openai@7.5.0(zod@4.4.3))
-      zod: 4.4.3
+      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.5.4))
+      '@langchain/langgraph': 1.4.12(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))(zod@4.5.4)
+      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))
+      langsmith: 0.9.0(openai@7.5.0(zod@4.5.4))
+      zod: 4.5.4
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - '@opentelemetry/exporter-trace-otlp-proto'
@@ -1598,11 +1598,11 @@ snapshots:
       - vue
       - ws
 
-  langsmith@0.9.0(openai@7.5.0(zod@4.4.3)):
+  langsmith@0.9.0(openai@7.5.0(zod@4.5.4)):
     dependencies:
       p-queue: 6.6.2
     optionalDependencies:
-      openai: 7.5.0(zod@4.4.3)
+      openai: 7.5.0(zod@4.5.4)
 
   levn@0.4.1:
     dependencies:
@@ -1627,9 +1627,9 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  openai@7.5.0(zod@4.4.3):
+  openai@7.5.0(zod@4.5.4):
     optionalDependencies:
-      zod: 4.4.3
+      zod: 4.5.4
 
   optionator@0.9.4:
     dependencies:
@@ -1749,4 +1749,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@4.4.3: {}
+  zod@4.5.4: {}
