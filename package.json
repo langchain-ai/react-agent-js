@@ -29,7 +29,7 @@
     "@eslint/js": "^10.0.1",
     "@tsconfig/recommended": "^1.0.13",
     "@types/node": "26.3.0",
-    "@typescript-eslint/eslint-plugin": "8.67.0",
+    "@typescript-eslint/eslint-plugin": "8.68.0",
     "@typescript-eslint/parser": "8.68.0",
     "dotenv": "^17.4.2",
     "eslint": "10.9.1",
