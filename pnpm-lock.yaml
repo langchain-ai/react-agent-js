@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       '@langchain/anthropic':
-        specifier: ^1.5.8
-        version: 1.5.8(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))
+        specifier: ^1.5.9
+        version: 1.5.9(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))
       '@langchain/core':
         specifier: ^1.2.9
         version: 1.2.9(openai@7.5.0(zod@4.5.4))
@@ -71,8 +71,8 @@ importers:
 
 packages:
 
-  '@anthropic-ai/sdk@0.115.0':
-    resolution: {integrity: sha512-BJrFIVyjNuU8lfDyIJTvlRYzgQg+zEl78BxE7fq8esULsGz9IRQvGtW5spq3tydmtjQb/GFdooKGdGsetpx+lQ==}
+  '@anthropic-ai/sdk@0.120.0':
+    resolution: {integrity: sha512-ZlvmNFT/iIF6JD13rxbbMWD8nvGR0RaUp6yMQnoc+4Af0YjVVe/bIdW1XSQQsoxXAtg1NaT6Vak0LKFlJ4d37Q==}
     hasBin: true
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
@@ -306,8 +306,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@langchain/anthropic@1.5.8':
-    resolution: {integrity: sha512-KZWgIf+04M9XZHhgH1rVJkqw/C26DM4a4jKk4Qc4HaSbRawN2Dw5nDffna+IoaU/50ohTdyB3HOz9g8XFQYF2A==}
+  '@langchain/anthropic@1.5.9':
+    resolution: {integrity: sha512-KENFWcb4f+vlbE49wDm/DV6CLX+BaL/8aAMWwkINwc/2ZW79HSY2nwFpFdmV10CPGBwfpiWFUZRBqvX+xw2idg==}
     engines: {node: '>=20'}
     peerDependencies:
       '@langchain/core': ^1.2.9
@@ -938,7 +938,7 @@ packages:
 
 snapshots:
 
-  '@anthropic-ai/sdk@0.115.0(zod@4.5.4)':
+  '@anthropic-ai/sdk@0.120.0(zod@4.5.4)':
     dependencies:
       json-schema-to-ts: 3.1.1
       standardwebhooks: 1.0.0
@@ -1091,9 +1091,9 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@langchain/anthropic@1.5.8(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))':
+  '@langchain/anthropic@1.5.9(@langchain/core@1.2.9(openai@7.5.0(zod@4.5.4)))':
     dependencies:
-      '@anthropic-ai/sdk': 0.115.0(zod@4.5.4)
+      '@anthropic-ai/sdk': 0.120.0(zod@4.5.4)
       '@langchain/core': 1.2.9(openai@7.5.0(zod@4.5.4))
       zod: 4.5.4
 
