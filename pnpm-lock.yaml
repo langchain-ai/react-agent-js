@@ -20,8 +20,8 @@ importers:
         specifier: ^1.2.9
         version: 1.2.9(openai@7.5.0(zod@4.6.5))
       '@langchain/openai':
-        specifier: ^1.5.10
-        version: 1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))
+        specifier: ^1.5.11
+        version: 1.5.11(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))
       langchain:
         specifier: ^1.5.10
         version: 1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))(openai@7.5.0(zod@4.6.5))
@@ -362,8 +362,8 @@ packages:
       '@langchain/core': ^1.1.48
       zod: ^3.25.32 || ^4.2.0
 
-  '@langchain/openai@1.5.10':
-    resolution: {integrity: sha512-4cxdgolkkXwnAiGEkNrue+ba7jUKjfBwleLCX5DrRVcRGrCc4w5EceblYZOIaHMY6+nhwMqIOtSzBWgcBCLfmw==}
+  '@langchain/openai@1.5.11':
+    resolution: {integrity: sha512-BvGp5lQk5//0WVwTIepscazFpneT9I9+mc+kp+cLuhGHFb7mc9zGNrusZOXoa3p73SN0i3XqTo8lyIndpVx3Hw==}
     engines: {node: '>=22'}
     peerDependencies:
       '@langchain/core': ^1.2.9
@@ -1186,7 +1186,7 @@ snapshots:
       - svelte
       - vue
 
-  '@langchain/openai@1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))':
+  '@langchain/openai@1.5.11(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))':
     dependencies:
       '@langchain/core': 1.2.9(openai@7.5.0(zod@4.6.5))
       js-tiktoken: 1.0.21
