@@ -15,16 +15,16 @@ importers:
     dependencies:
       '@langchain/anthropic':
         specifier: ^1.5.9
-        version: 1.5.9(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))
+        version: 1.5.9(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))
       '@langchain/core':
-        specifier: ^1.2.9
-        version: 1.2.9(openai@7.5.0(zod@4.6.5))
+        specifier: ^1.2.12
+        version: 1.2.12(openai@7.5.0(zod@4.6.5))
       '@langchain/openai':
         specifier: ^1.5.11
-        version: 1.5.11(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))
+        version: 1.5.11(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))
       langchain:
         specifier: ^1.5.10
-        version: 1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))(openai@7.5.0(zod@4.6.5))
+        version: 1.5.10(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))(openai@7.5.0(zod@4.6.5))
       zod:
         specifier: ^4.6.5
         version: 4.6.5
@@ -327,8 +327,8 @@ packages:
     peerDependencies:
       '@langchain/core': ^1.2.9
 
-  '@langchain/core@1.2.9':
-    resolution: {integrity: sha512-conzSEj9Zu1AyXJLXsSbgrtxtxinmI1yGqQ5CIJZSoV5rvv+yvQE/vgBnoySpBQ/bl3YPgj2FL/gbDjWykLSfg==}
+  '@langchain/core@1.2.12':
+    resolution: {integrity: sha512-DvNsrN5Gz+bgEy/B/kK1AvxxcrwdrflI8hZJxqo/DtA17FMUeWM5k0o1c6G8ChH8+sIakV2UsDudFmNZJp1ugQ==}
     engines: {node: '>=20'}
 
   '@langchain/langgraph-checkpoint@1.1.5':
@@ -1086,13 +1086,13 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@langchain/anthropic@1.5.9(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))':
+  '@langchain/anthropic@1.5.9(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))':
     dependencies:
       '@anthropic-ai/sdk': 0.120.0(zod@4.6.5)
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.6.5))
+      '@langchain/core': 1.2.12(openai@7.5.0(zod@4.6.5))
       zod: 4.6.5
 
-  '@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5))':
+  '@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5))':
     dependencies:
       '@cfworker/json-schema': 4.1.1
       '@standard-schema/spec': 1.1.0
@@ -1108,23 +1108,23 @@ snapshots:
       - openai
       - ws
 
-  '@langchain/langgraph-checkpoint@1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))':
+  '@langchain/langgraph-checkpoint@1.1.5(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.6.5))
+      '@langchain/core': 1.2.12(openai@7.5.0(zod@4.6.5))
 
-  '@langchain/langgraph-sdk@1.9.31(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))':
+  '@langchain/langgraph-sdk@1.9.31(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.6.5))
+      '@langchain/core': 1.2.12(openai@7.5.0(zod@4.6.5))
       '@langchain/protocol': 0.0.18
       '@types/json-schema': 7.0.15
       p-queue: 9.3.3
       p-retry: 7.1.1
 
-  '@langchain/langgraph@1.4.12(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))(zod@4.6.5)':
+  '@langchain/langgraph@1.4.12(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))(zod@4.6.5)':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.6.5))
-      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))
-      '@langchain/langgraph-sdk': 1.9.31(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))
+      '@langchain/core': 1.2.12(openai@7.5.0(zod@4.6.5))
+      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))
+      '@langchain/langgraph-sdk': 1.9.31(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))
       '@langchain/protocol': 0.0.18
       '@standard-schema/spec': 1.1.0
       zod: 4.6.5
@@ -1134,9 +1134,9 @@ snapshots:
       - svelte
       - vue
 
-  '@langchain/openai@1.5.11(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))':
+  '@langchain/openai@1.5.11(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))':
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.6.5))
+      '@langchain/core': 1.2.12(openai@7.5.0(zod@4.6.5))
       js-tiktoken: 1.0.21
       openai: 7.5.0(zod@4.6.5)
       zod: 4.6.5
@@ -1512,11 +1512,11 @@ snapshots:
     dependencies:
       '@keyv/serialize': 1.1.1
 
-  langchain@1.5.10(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))(openai@7.5.0(zod@4.6.5)):
+  langchain@1.5.10(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))(openai@7.5.0(zod@4.6.5)):
     dependencies:
-      '@langchain/core': 1.2.9(openai@7.5.0(zod@4.6.5))
-      '@langchain/langgraph': 1.4.12(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))(zod@4.6.5)
-      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.9(openai@7.5.0(zod@4.6.5)))
+      '@langchain/core': 1.2.12(openai@7.5.0(zod@4.6.5))
+      '@langchain/langgraph': 1.4.12(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))(zod@4.6.5)
+      '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))
       langsmith: 0.9.0(openai@7.5.0(zod@4.6.5))
       zod: 4.6.5
     transitivePeerDependencies:

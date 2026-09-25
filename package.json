@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@langchain/anthropic": "^1.5.9",
-    "@langchain/core": "^1.2.9",
+    "@langchain/core": "^1.2.12",
     "@langchain/openai": "^1.5.11",
     "langchain": "^1.5.10",
     "zod": "^4.6.5"
