@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       '@langchain/anthropic':
-        specifier: ^1.5.9
-        version: 1.5.9(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))
+        specifier: ^1.5.11
+        version: 1.5.11(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))
       '@langchain/core':
         specifier: ^1.2.12
         version: 1.2.12(openai@7.5.0(zod@4.6.5))
@@ -71,8 +71,8 @@ importers:
 
 packages:
 
-  '@anthropic-ai/sdk@0.120.0':
-    resolution: {integrity: sha512-ZlvmNFT/iIF6JD13rxbbMWD8nvGR0RaUp6yMQnoc+4Af0YjVVe/bIdW1XSQQsoxXAtg1NaT6Vak0LKFlJ4d37Q==}
+  '@anthropic-ai/sdk@0.122.0':
+    resolution: {integrity: sha512-GGPNftt0caaz9MDlmNQGHX8855Ojaduyy5pm9Sm1h7HalCn0cWNb5/bweadJF+4yzbal+QL6ztBa09WAAOzLmQ==}
     hasBin: true
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
@@ -321,11 +321,11 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@langchain/anthropic@1.5.9':
-    resolution: {integrity: sha512-KENFWcb4f+vlbE49wDm/DV6CLX+BaL/8aAMWwkINwc/2ZW79HSY2nwFpFdmV10CPGBwfpiWFUZRBqvX+xw2idg==}
+  '@langchain/anthropic@1.5.11':
+    resolution: {integrity: sha512-NunWC6u8A/h5VnRk/WvyFkvN3RtdONUWV16u2i/EcEvhtjL2ZhJBPjjSFhm/7vyjtwdTyDhp7Uny75FHB7JXEQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@langchain/core': ^1.2.9
+      '@langchain/core': ^1.2.12
 
   '@langchain/core@1.2.12':
     resolution: {integrity: sha512-DvNsrN5Gz+bgEy/B/kK1AvxxcrwdrflI8hZJxqo/DtA17FMUeWM5k0o1c6G8ChH8+sIakV2UsDudFmNZJp1ugQ==}
@@ -913,7 +913,7 @@ packages:
 
 snapshots:
 
-  '@anthropic-ai/sdk@0.120.0(zod@4.6.5)':
+  '@anthropic-ai/sdk@0.122.0(zod@4.6.5)':
     dependencies:
       json-schema-to-ts: 3.1.1
       standardwebhooks: 1.0.0
@@ -1086,9 +1086,9 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@langchain/anthropic@1.5.9(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))':
+  '@langchain/anthropic@1.5.11(@langchain/core@1.2.12(openai@7.5.0(zod@4.6.5)))':
     dependencies:
-      '@anthropic-ai/sdk': 0.120.0(zod@4.6.5)
+      '@anthropic-ai/sdk': 0.122.0(zod@4.6.5)
       '@langchain/core': 1.2.12(openai@7.5.0(zod@4.6.5))
       zod: 4.6.5
 
