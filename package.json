@@ -18,7 +18,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@langchain/anthropic": "^1.5.11",
+    "@langchain/anthropic": "^1.5.12",
     "@langchain/core": "^1.2.16",
     "@langchain/openai": "^1.5.13",
     "langchain": "^1.5.12",
