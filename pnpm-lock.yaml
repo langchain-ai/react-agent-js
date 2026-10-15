@@ -20,8 +20,8 @@ importers:
         specifier: ^1.2.16
         version: 1.2.16(openai@7.23.0(zod@4.6.6))
       '@langchain/openai':
-        specifier: ^1.5.13
-        version: 1.5.13(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))
+        specifier: ^1.6.2
+        version: 1.6.2(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))
       langchain:
         specifier: ^1.5.12
         version: 1.5.12(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))(openai@7.23.0(zod@4.6.6))
@@ -356,11 +356,11 @@ packages:
       '@langchain/core': ^1.1.48
       zod: ^3.25.32 || ^4.2.0
 
-  '@langchain/openai@1.5.13':
-    resolution: {integrity: sha512-SA1QWNgM/p8xhdwU82CJ7OofhHEExpAaIwJ7j9ELIyVW795Mn0jDRQO/5yChawLcPhuLkeL+jMesi0FnXbImSg==}
+  '@langchain/openai@1.6.2':
+    resolution: {integrity: sha512-KaXc3zjdM2/E24FdBlsk5NTT2Dyxh46vzCS2by78ehN6G5zdx+4OfVnPvyLl8r2tv2TqQCHpEhImVXgnAZaOvg==}
     engines: {node: '>=22'}
     peerDependencies:
-      '@langchain/core': ^1.2.11
+      '@langchain/core': ^1.2.14
 
   '@langchain/protocol@0.0.19':
     resolution: {integrity: sha512-9hKcRrH7cBX6gfutdfXPoft1OCchHe4FEpALoDJMl5Qu+n/YG5ynZmyu8+8cxORlPwHBoKTxggvXz+76M1yX1Q==}
@@ -1189,7 +1189,7 @@ snapshots:
       - react
       - react-dom
 
-  '@langchain/openai@1.5.13(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))':
+  '@langchain/openai@1.6.2(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))':
     dependencies:
       '@langchain/core': 1.2.16(openai@7.23.0(zod@4.6.6))
       js-tiktoken: 1.0.21
