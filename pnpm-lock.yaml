@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       '@langchain/anthropic':
-        specifier: ^1.5.11
-        version: 1.5.11(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))
+        specifier: ^1.5.12
+        version: 1.5.12(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))
       '@langchain/core':
         specifier: ^1.2.16
         version: 1.2.16(openai@7.23.0(zod@4.6.6))
@@ -321,11 +321,11 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@langchain/anthropic@1.5.11':
-    resolution: {integrity: sha512-NunWC6u8A/h5VnRk/WvyFkvN3RtdONUWV16u2i/EcEvhtjL2ZhJBPjjSFhm/7vyjtwdTyDhp7Uny75FHB7JXEQ==}
+  '@langchain/anthropic@1.5.12':
+    resolution: {integrity: sha512-tVvI94zAtG6isYxBzL7hlbxfbqjmvx/BqBWAov7v+bABKYz3fZHFI2Io1UI5UzU+h/5SuC1qXUV+JxnaqylJJw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@langchain/core': ^1.2.12
+      '@langchain/core': ^1.2.14
 
   '@langchain/core@1.2.16':
     resolution: {integrity: sha512-CdESZETgotCG/xz0G1wyNq8AH3Px3BN50FDfOqA4PjoqOWhBtMP2DJxkRzuSNcsr11Z1pf0JMF1puAPw4HPxSQ==}
@@ -1143,7 +1143,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@langchain/anthropic@1.5.11(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))':
+  '@langchain/anthropic@1.5.12(@langchain/core@1.2.16(openai@7.23.0(zod@4.6.6)))':
     dependencies:
       '@anthropic-ai/sdk': 0.122.0(zod@4.6.6)
       '@langchain/core': 1.2.16(openai@7.23.0(zod@4.6.6))
