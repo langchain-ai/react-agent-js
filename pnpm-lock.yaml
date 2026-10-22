@@ -48,8 +48,8 @@ importers:
         specifier: 8.70.1
         version: 8.70.1(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)
       dotenv:
-        specifier: ^18.0.7
-        version: 18.0.7
+        specifier: ^18.0.8
+        version: 18.0.8
       eslint:
         specifier: 10.12.0
         version: 10.12.0(jiti@2.7.0)
@@ -563,8 +563,8 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
-  dotenv@18.0.7:
-    resolution: {integrity: sha512-QEvMEF8ca3GNZJJnAbOgxpj5ULhBvnMcURp+XKrtvqFNPgjBvYoswQ0Jl2cO7JzCjxZjJhr9ZuIEhlrRxMft/Q==}
+  dotenv@18.0.8:
+    resolution: {integrity: sha512-2KDeoFoK/zRtcnbunCDlLG5VWVMcyqeQc6iK65o231nfNAcuGrKoqUQfJFUtBI+QlShk5HKIHxwebBtUl3rEfA==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -1456,7 +1456,7 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  dotenv@18.0.7: {}
+  dotenv@18.0.8: {}
 
   esbuild@0.28.2:
     optionalDependencies:
