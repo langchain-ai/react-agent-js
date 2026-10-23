@@ -21,7 +21,7 @@
     "@langchain/anthropic": "^1.5.12",
     "@langchain/core": "^1.2.16",
     "@langchain/openai": "^1.6.2",
-    "langchain": "^1.5.12",
+    "langchain": "^1.5.15",
     "zod": "^4.6.6"
   },
   "devDependencies": {
