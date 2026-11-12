@@ -23,8 +23,8 @@ importers:
         specifier: ^1.6.2
         version: 1.6.2(@langchain/core@1.3.4(openai@7.23.0(zod@4.6.7)))
       langchain:
-        specifier: ^1.5.20
-        version: 1.5.20(@langchain/core@1.3.4(openai@7.23.0(zod@4.6.7)))(openai@7.23.0(zod@4.6.7))
+        specifier: ^1.6.1
+        version: 1.6.1(@langchain/core@1.3.4(openai@7.23.0(zod@4.6.7)))(openai@7.23.0(zod@4.6.7))
       zod:
         specifier: ^4.6.7
         version: 4.6.7
@@ -748,11 +748,11 @@ packages:
   keyv@5.6.0:
     resolution: {integrity: sha512-CYDD3SOtsHtyXeEORYRx2qBtpDJFjRTGXUtmNEMGyzYOKj1TE3tycdlho7kA1Ufx9OYWZzg52QFBGALTirzDSw==}
 
-  langchain@1.5.20:
-    resolution: {integrity: sha512-EF09msFPSk84FsGwD0KU3kaD2+QNoZwSUhFchU85KrcutHAWoOVcIe5a4So9YnvG4K3NM23DrkC7+UF1ZrkTpg==}
+  langchain@1.6.1:
+    resolution: {integrity: sha512-+t78JgpdZFQA21iDeD4yra9L0lrUPpBBgPLjk7NfUiG1tMfvlZdmYTqxOuEeYt5CKf9Epcfxg9ectJbYlTOv1w==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@langchain/core': ^1.3.0
+      '@langchain/core': ^1.3.4
 
   langsmith@0.9.0:
     resolution: {integrity: sha512-tlg/aG7qezAKY6G3fgADSX7PkRj+JKoF3z7QNkCMsAOvwvuzhiwP9Amn1Z+zAIxuKoWuXQdIjtFN0LVmUC1oUQ==}
@@ -1650,7 +1650,7 @@ snapshots:
     dependencies:
       '@keyv/serialize': 1.1.1
 
-  langchain@1.5.20(@langchain/core@1.3.4(openai@7.23.0(zod@4.6.7)))(openai@7.23.0(zod@4.6.7)):
+  langchain@1.6.1(@langchain/core@1.3.4(openai@7.23.0(zod@4.6.7)))(openai@7.23.0(zod@4.6.7)):
     dependencies:
       '@langchain/core': 1.3.4(openai@7.23.0(zod@4.6.7))
       '@langchain/langgraph': 1.4.19(@langchain/core@1.3.4(openai@7.23.0(zod@4.6.7)))(zod@4.6.7)
